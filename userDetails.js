@@ -102,7 +102,7 @@ Response:
 
 Q6. Filter out the person who lives in city "North Dakota" and transform the result to the following structure. 
 Response: 
-[{id: 600dc3b5d617e547a0e74cb9, name: Mitchell Fitzgerald"}, { city: "North Dakota" }, { company: "Scenty" }]
+[{id    : 600dc3b5d617e547a0e74cb9, name: Mitchell Fitzgerald"}, { city: "North Dakota" }, { company: "Scenty" }]
 
 Q7. Transform into following Object
 Response:

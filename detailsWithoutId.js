@@ -4,18 +4,7 @@ const userDetailsArray = require('./userDetails');
 result = userDetailsArray.reduce(function (acc, curr) {
 
     let id = curr['id']
-    let obj = {}
-    Object.keys(curr).forEach((key) => {
-        if (key !== "id") {
-            if(key === 'address'){
-                obj[key] = {...curr.address}
-            }
-            else{
-            obj[key]=curr[key]
-            }
-        }
-    })
-    acc[id] = obj
+    acc[id] = {"name":curr["name"], "about":curr['about'], "address":curr["address"], "address" : {...curr["address"]}, "company":curr["company"]};
     return acc;
 }, {})
 
